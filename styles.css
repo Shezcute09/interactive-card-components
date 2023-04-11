@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light_Grey: hsl(217, 12%, 63%);
+  --Medium_Grey: hsl(216, 12%, 54%);
+  --Dark_Blue: hsl(213, 19%, 18%);
+  --Very_Dark_Blue: hsl(216, 12%, 8%);
+  --fw-small: 400;
+  --fw-big: 700;
+  --font_size: 15px;
+  --font-fam_one: "Overpass", sans-serif;
+  --font-fam_two: "Space Grotesk", sans-serif;
+}
+
+body {
+  background-color: var(--Very_Dark_Blue);
+  font-weight: var(--fw-small);
+  font-size: var(--font_size);
+  font-family: var(--font-fam_one);
+}
+
+section {
+  margin: 3rem 2rem;
+}
+
+main {
+  background-color: var(--Dark_Blue);
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+#heading {
+  font-weight: var(--fw-big);
+  color: var(--White);
+  margin: 1rem 0;
+}
+
+button {
+  width: 90%;
+  padding: 0.7rem 0;
+  border-radius: 30px;
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  margin-top: 1.5rem;
+  color: var(--White);
+  letter-spacing: 3px;
+}
+
+button:hover {
+  background-color: var(--White);
+  color: var(--orange);
+  border: 1px solid var(--White);
+}
+
+
+
+.container_for_number_rating {
+  padding: 0.5rem 0;
+  display: flex;
+  gap: 5%;
+
+}
+
+#symbol_number_rating {
+  background-color: var(--Medium_Grey);
+  border-radius: 50%;
+  padding: 0.6rem 0.6rem;
+}
+
+.content {
+  color: var(--Light_Grey);
+}
+
+.number_rating {
+  background-color: var(--Medium_Grey);
+  border-radius: 50%;
+  padding: 4% 5.9%;
+  color: var(--Light_Grey);
+}
+
+.number_rating:hover {
+background-color: var(--orange);
+}
+
+
+@media screen and (min-width: 576px) {
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+  }
+
+  main {
+    width: 40%;
+    height: 40%;
+  }
+  
+}
